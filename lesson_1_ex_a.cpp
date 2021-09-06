@@ -16,9 +16,9 @@ int main()
 	std::cin >> c;
 	std::cin >> d;
 
-	if (a == 0 && b == 0 && c == 0)
+	if (a == 0 && b == 0)
 		std::cout << "INF";
-	else if (b%a == 0 && (c == 0 || -b/a != -d/c))
+	else if (a != 0 && b%a == 0 && (c == 0 || -b/a != -d/c))
 		std::cout << -b/a;
 	else
 		std::cout << "NO";
